@@ -20,3 +20,4 @@ Jenkins 2.528.2, Maven 3.9.11 et JDK 21, avec compilation ciblant Java 17. Les b
 | --- | --- | --- | --- | --- |
 | `main` | `e8a5153b2a15` | 3/3 | `Bonjour, DevOps !` | SUCCESS |
 
+[Captures d’exécution](README.md#captures-jenkins)
