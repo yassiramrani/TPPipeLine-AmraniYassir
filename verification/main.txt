@@ -1,0 +1,10 @@
+$ java -m jdk.compiler/com.sun.tools.javac.Main -source 17 -target 17 -d target/classes src/main/java/ma/emsi/devops/Main.java src/test/java/ma/emsi/devops/GreetingChecks.java
+warning: [options] system modules path not set in conjunction with -source 17
+1 warning
+$ java -cp target/classes ma.emsi.devops.GreetingChecks
+OK - sans argument
+OK - argument vide
+OK - argument personnalisé
+$ java -m jdk.jartool/sun.tools.jar.Main --create --file target/tp-pipeline.jar --main-class ma.emsi.devops.Main -C target/classes ma/emsi/devops/Main.class
+$ java -jar target/tp-pipeline.jar
+Bonjour, DevOps !
