@@ -20,10 +20,13 @@ java -jar target/tp-pipeline.jar
 1. Créer le dépôt GitHub `TPPipeLine-AmraniYassir` et pousser la branche `main`.
 2. Dans Jenkins, créer un élément de type **Pipeline**, puis sélectionner **Pipeline script from SCM** → **Git**. Renseigner l'URL du dépôt, `*/main` et le chemin `Jenkinsfile`. Pour un dépôt privé, sélectionner les identifiants dans Jenkins.
 3. Lancer **Build Now**. Vérifier les trois étapes, le message `Bonjour, DevOps !` dans la console et le JAR dans les artefacts.
-4. Ajouter les captures de la vue des étapes et de la console Jenkins à ce README, puis remettre le lien GitHub dans Classroom.
 
 ## Résultats vérifiés
 
-Compilation avec le compilateur Java 21 ciblant Java 17, trois vérifications et exécution du JAR. Les journaux du dossier `verification/` proviennent des commandes Java lancées localement. L’exécution Maven et les captures d’une exécution Jenkins restent à valider.
+Jenkins 2.528.2, Maven 3.9.11 et JDK 21, avec compilation ciblant Java 17. Les builds ont utilisé une copie locale des branches déjà publiées sur GitHub. Jenkins a archivé le JAR après les trois vérifications.
+
+| Branche | Commit testé | Vérifications | Sortie du JAR | Jenkins |
+| --- | --- | --- | --- | --- |
+| `main` | `e8a5153b2a15` | 3/3 | `Bonjour, DevOps !` | SUCCESS |
 
 Voir [le compte rendu](RAPPORT.md).

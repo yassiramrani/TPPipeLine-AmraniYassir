@@ -12,4 +12,11 @@ Le TP automatise la compilation, les tests et le conditionnement d’un programm
 
 Le job Pipeline vise la branche main. Le déclenchement manuel permet de vérifier les étapes ainsi que l’artefact archivé.
 
-La compilation, les trois vérifications et le lancement du JAR ont été exécutés localement avec les outils Java. Les journaux correspondants sont dans `verification/`. La validation du job Jenkins et ses captures restent à réaliser.
+## Exécution vérifiée
+
+Jenkins 2.528.2, Maven 3.9.11 et JDK 21, avec compilation ciblant Java 17. Les builds ont utilisé une copie locale des branches déjà publiées sur GitHub. Jenkins a archivé le JAR après les trois vérifications.
+
+| Branche | Commit testé | Vérifications | Sortie du JAR | Jenkins |
+| --- | --- | --- | --- | --- |
+| `main` | `e8a5153b2a15` | 3/3 | `Bonjour, DevOps !` | SUCCESS |
+
